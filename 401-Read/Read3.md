@@ -1,0 +1,40 @@
+# What are the advantages of TDD approach?
+
+  1. Better program design and higher code quality
+When writing tests, programmers first have to define a goal they will achieve with the code piece. Developers estimate an experience it will give and the way it will match with other pieces of the entire code. A developer keeps in mind everything, from an interface to a work plan.
+
+Besides, TDD strongly evolves with the DRY principle. It says programmers should avoid repeating code in different system parts. The principle invites developers to use small classes and functions for particular requirements. This helps clearly define the system objects and keep the codebase successive.
+
+Next, when developers build a code with the TDD usage, it levels up the quality. You know why? Because all the possible mistakes and errors are already taken into account. Here, developers write the necessary tests, and the code, therefore, to avoid all the failures. Consequently, the code appears to give better results.
+
+Finally, when your code has a clear structure and fits the test requirements, it’s very simple, straightforward and brief. There are no massive code blocks stalling the solution functionality. Even if any, programmers refactor the code to simplify it the whole structure.
+
+In a nutshell, there’s a huge advantage in all of the TDD aspects. A beautifully-structured code is easier to modify, extend, test, and maintain. The cleaner and simpler the code is, the fewer efforts you’ll have to put into modification or updates. And this directly contributes to your project’s success.
+
+  2. Detailed project documentation
+When writing tests for particular requirements, programmers immediately create a strict and detailed specification. It already includes all the likely users’ actions.
+
+In this way, we already have a scenario determining all the way forward. You don’t need to create any heavy documentation, which relieves both you and programmers of additional efforts.
+
+For the unit test to be comprehensive and behave as appropriate, programmers proceed from user’s stories. The results hit with simplicity and consistency, thus making the code as close as possible to all the requirements.
+
+  3. TDD reduces the time required for project development
+It’s widely known that applications created with Test Driven Development take longer than ones created without TDD. Some sources mention the difference of about 30 percent.
+
+SQL vs NoSQL Database Differences Explained with few Example DB
+
+Most of you are already familiar with SQL database, and have a good knowledge on either MySQL, Oracle, or other SQL databases. In the last several years, NoSQL database is getting widely adopted to solve various business problems.
+
+It is helpful to understand the difference between SQL and NoSQL database, and some of available NoSQL database that you can play around with
+
+NOSQL DATA MODELING TECHNIQUES NoSQL databases are often compared by various non-functional criteria, such as scalability, performance, and consistency. This aspect of NoSQL is well-studied both in practice and theory because specific non-functional properties are often the main justification for NoSQL usage and fundamental results on distributed systems like the CAP theorem apply well to NoSQL systems. At the same time, NoSQL data modeling is not so well studied and lacks the systematic theory found in relational databases. In this article I provide a short comparison of NoSQL system families from the data modeling point of view and digest several common modeling techniques.
+
+The Mongoose Number SchemaType. Used for declaring paths in your schema that Mongoose should cast to numbers.
+
+Mongoose.prototype.Mongoose() The Mongoose constructor
+
+The exports of the mongoose module is an instance of this class.
+
+Example: var mongoose = require('mongoose'); var mongoose2 = new mongoose.Mongoose();
+
+Mongoose.prototype.connect() Parameters uri(s) «String» [options] «Object» passed down to the MongoDB driver's connect() function, except for 4 mongoose-specific options explained below. [options.bufferCommands=true] «Boolean» Mongoose specific option. Set to false to disable buffering on all models associated with this connection. [options.dbName] «String» The name of the database we want to use. If not provided, use database name from connection string. [options.user] «String» username for authentication, equivalent to options.auth.user. Maintained for backwards compatibility. [options.pass] «String» password for authentication, equivalent to options.auth.password. Maintained for backwards compatibility. [options.poolSize=5] «Number» The maximum number of sockets the MongoDB driver will keep open for this connection. By default, poolSize is 5. Keep in mind that, as of MongoDB 3.4, MongoDB only allows one operation per socket at a time, so you may want to increase this if you find you have a few slow queries that are blocking faster queries from proceeding. See Slow Trains in MongoDB and Node.js. [options.useUnifiedTopology=false] «Boolean» False by default. Set to true to opt in to the MongoDB driver's replica set and sharded cluster monitoring engine. [options.serverSelectionTimeoutMS] «Number» If useUnifiedTopology = true, the MongoDB driver will try to find a server to send any given operation to, and keep retrying for serverSelectionTimeoutMS milliseconds before erroring out. If not set, the MongoDB driver defaults to using 30000 (30 seconds). [options.heartbeatFrequencyMS] «Number» If useUnifiedTopology = true, the MongoDB driver sends a heartbeat every heartbeatFrequencyMS to check on the status of the connection. A heartbeat is subject to serverSelectionTimeoutMS, so the MongoDB driver will retry failed heartbeats for up to 30 seconds by default. Mongoose only emits a 'disconnected' event after a heartbeat has failed, so you may want to decrease this setting to reduce the time between when your server goes down and when Mongoose emits 'disconnected'. We recommend you do not set this setting below 1000, too many heartbeats can lead to performance degradation. [options.autoIndex=true] «Boolean» Mongoose-specific option. Set to false to disable automatic index creation for all models associated with this connection. [options.useNewUrlParser=false] «Boolean» False by default. Set to true to opt in to the MongoDB driver's new URL parser logic. [options.useCreateIndex=true] «Boolean» Mongoose-specific option. If true, this connection will use createIndex() instead of ensureIndex() for automatic index builds via Model.init(). [options.useFindAndModify=true] «Boolean» True by default. Set to false to make findOneAndUpdate() and findOneAndRemove() use native findOneAndUpdate() rather than findAndModify(). [options.reconnectTries=30] «Number» If you're connected to a single server or mongos proxy (as opposed to a replica set), the MongoDB driver will try to reconnect every reconnectInterval milliseconds for reconnectTries times, and give up afterward. When the driver gives up, the mongoose connection emits a reconnectFailed event. This option does nothing for replica set connections. [options.reconnectInterval=1000] «Number» See reconnectTries option above. [options.promiseLibrary] «Class» Sets the underlying driver's promise library. [options.bufferMaxEntries] «Number» This option does nothing if useUnifiedTopology is set. The MongoDB driver also has its own buffering mechanism that kicks in when the driver is disconnected. Set this option to 0 and set bufferCommands to false on your schemas if you want your database operations to fail immediately when the driver is not connected, as opposed to waiting for reconnection. [options.connectTimeoutMS=30000] «Number» How long the MongoDB driver will wait before killing a socket due to inactivity during initial connection. Defaults to 30000. This option is passed transparently to Node.js' socket#setTimeout() function.
