@@ -1,5 +1,5 @@
 Dunder Magic , Special Methods
-![image4](./image/image5.jpg)
+![image4](./image/image4.png)
 
 What Are Dunder Methods?
 In Python, special methods are a set of predefined methods you can use to enrich your classes. They are easy to recognize because they start and end with double underscores, for example init or str.
@@ -11,7 +11,7 @@ __repr__: The â€œofficialâ€� string representation of an object. This i
 __str__: The â€œinformalâ€� or nicely printable string representation of an object. This is for the enduser.
 
 Statistics - Probability
-![image5](./image/image5.png)
+![image5](./image/image5.jpg)
 What is probability?
 At the most basic level, probability seeks to answer the question, â€œWhat is the chance of an event happening?â€� An event is some outcome of interest. To calculate the chance of an event happening, we also need to consider all the other events that can occur. The quintessential representation of probability is the humble coin toss. In a coin toss the only events that can happen are:
 
