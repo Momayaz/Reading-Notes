@@ -1,4 +1,5 @@
-Dunder Magic , Special Methods
+# Dunder Magic , Special Methods
+
 ![image4](./image/image4.png)
 
 What Are Dunder Methods?
