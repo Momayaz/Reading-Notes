@@ -195,3 +195,4 @@ ALGORITHM isEmpty()
 
 return front = NULL
 ```
+____
