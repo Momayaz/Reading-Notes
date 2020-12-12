@@ -24,7 +24,7 @@ This means that the last item added to the stack will be the first item popped o
 ## Stack Visualization
 Here's an example of what a stack looks like. As you can see, the topmost item is denoted as the top. When you push something to the stack, it becomes the new top. When you pop something from the stack, you pop the current top and set the next top as top.next.
 
-![image6](image/image6.png)
+![image6](../image/image6.png)
 
 ## Push O(1)
 Pushing a Node onto a stack will always be an O(1) operation. This is because it takes the same amount of time no matter how many Nodes (n) you have in the stack.
@@ -33,9 +33,9 @@ When adding a Node, you push it into the stack by assigning it as the new top, w
 
 Let's walk through the steps:
 
-First, you should have the Node that you want to add. Here is an example of a Node that we want to add to the stack. ![image7](image/image7.png)
-Next, you need to assign the next property of Node 5 to reference the same Node that top is referencing: ![image8](image/image8.png)
-Technically at this point, your new Node is added to your stack, but there is no indication that it is the first Node in the stack. To make this happen, you have to re-assign our reference top to the newly added Node, Node ![image9](image/image9.png)
+First, you should have the Node that you want to add. Here is an example of a Node that we want to add to the stack. ![image7](../image/image7.png)
+Next, you need to assign the next property of Node 5 to reference the same Node that top is referencing: ![image8](../image/image8.png)
+Technically at this point, your new Node is added to your stack, but there is no indication that it is the first Node in the stack. To make this happen, you have to re-assign our reference top to the newly added Node, Node ![image9](../image/image9.png)
 Congratulations! You completed a successful push of Node 5 onto the stack.
 Here is the pseudocode to push a value onto a stack:
 ```
@@ -54,11 +54,11 @@ Typically, you would check isEmpty before conducting a pop. This will ensure tha
 
 Let's try and pop off Node 5 from the stack. Here is a visual of the current state of our stack:
 
-![image10](image/image10.png)
+![image10](../image/image10.png)
 
-The first step of removing Node 5 from the stack is to create a reference named temp that points to the same Node that top points to. ![image11](image/image11.png)
-Once you have created the new reference type, you now need to re-assign top to the value that the next property is referencing. In our visual, we can see that the next property is pointing to Node 4. We will re-assign top to be Node 4. ![image12](image/image12.png)
-We can now remove Node 5 safely without it affecting the rest of the stack. Before we do that though you may want to make sure that you clear out the next property in your current temp reference. This will ensure that no further references to Node 4 are floating around the heap. This will allow our garbage collector to cleanly and safely dispose of the Nodes correctly.![image13](image/image13.png)
+The first step of removing Node 5 from the stack is to create a reference named temp that points to the same Node that top points to. ![image11](../image/image11.png)
+Once you have created the new reference type, you now need to re-assign top to the value that the next property is referencing. In our visual, we can see that the next property is pointing to Node 4. We will re-assign top to be Node 4. ![image12](../image/image12.png)
+We can now remove Node 5 safely without it affecting the rest of the stack. Before we do that though you may want to make sure that you clear out the next property in your current temp reference. This will ensure that no further references to Node 4 are floating around the heap. This will allow our garbage collector to cleanly and safely dispose of the Nodes correctly.![image13](../image/image13.png)
 Finally, we return the value of the temp Node that was just popped off.
 Here is the pseudocode for a pop
 ```
@@ -123,15 +123,15 @@ Here is what a Queue looks like:
 
 Queue
 
-![image14](image/image14.png)
+![image14](../image/image14.png)
 When you add an item to a queue, you use the enqueue action. This is done with an O(1) operation in time because it does not matter how many other items live in the queue (n); it takes the same amount of time to perform the operation.
 
 Let's walk through the process of adding a Node to a queue:
 
-![image15](image/image15.png)
+![image15](../image/image15.png)
 
-First, we should change the next property of Node 4 to point to the Node we are adding. In our case with the visual below, we will be re-assigning Node 4's .next to Node 5. The only way we have access to Node 4 is through our reference rear. Following the rules of reference types, this means that we must change rear.next to Node 5. ![image16](image/image16.png)
-After we have set the next property, we can re-assign the rear reference to point to Node 5. By doing this, it allows us to keep a reference of where the rear is, and we can continue to enqueue Nodes into the queue as needed. ![image17](image/image17.png)
+First, we should change the next property of Node 4 to point to the Node we are adding. In our case with the visual below, we will be re-assigning Node 4's .next to Node 5. The only way we have access to Node 4 is through our reference rear. Following the rules of reference types, this means that we must change rear.next to Node 5. ![image16](../image/image16.png)
+After we have set the next property, we can re-assign the rear reference to point to Node 5. By doing this, it allows us to keep a reference of where the rear is, and we can continue to enqueue Nodes into the queue as needed. ![image17](../image/image17.png)
 Congratulations! You have just successfully added a Node to a queue by activating the enqueue action.
 ___
 ## Code
@@ -151,9 +151,9 @@ Typically, you would check isEmpty before conducting a dequeue. This will ensure
 
 Let's walk through the process of removing a Node from a queue.
 
-The first thing you want to do is create a temporary reference type named temp and have it point to the same Node that front is pointing too. This means that temp will point to Node 1. ![image18](image/image18.png)
-Next, you want to re-assign front to the next value that the Node front is referencing. In our visual, this would be Node 2. ![image19](image/image19.png)
-Now that we have moved front to the second Node in line, we can next re-assign the next property on the temp Node to null. We do this because we want to make sure that all the proper Nodes clear any unnecessary references for the garbage collector to come in later and clean up. ![image20](image/image20.png)
+The first thing you want to do is create a temporary reference type named temp and have it point to the same Node that front is pointing too. This means that temp will point to Node 1. ![image18](../image/image18.png)
+Next, you want to re-assign front to the next value that the Node front is referencing. In our visual, this would be Node 2. ![image19](../image/image19.png)
+Now that we have moved front to the second Node in line, we can next re-assign the next property on the temp Node to null. We do this because we want to make sure that all the proper Nodes clear any unnecessary references for the garbage collector to come in later and clean up. ![image20](../image/image20.png)
 Finally, we return the value of the temp Node that was just removed.
 Congratulations! You have just successfully completed a dequeue action on a queue!
 Code
