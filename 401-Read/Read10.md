@@ -133,6 +133,7 @@ Let's walk through the process of adding a Node to a queue:
 First, we should change the next property of Node 4 to point to the Node we are adding. In our case with the visual below, we will be re-assigning Node 4's .next to Node 5. The only way we have access to Node 4 is through our reference rear. Following the rules of reference types, this means that we must change rear.next to Node 5. ![image16](image/image16.png)
 After we have set the next property, we can re-assign the rear reference to point to Node 5. By doing this, it allows us to keep a reference of where the rear is, and we can continue to enqueue Nodes into the queue as needed. ![image17](image/image17.png)
 Congratulations! You have just successfully added a Node to a queue by activating the enqueue action.
+___
 ## Code
 Here is the pseudocode for the enqueue method:
 ```
