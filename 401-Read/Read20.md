@@ -30,5 +30,4 @@ To verify that Django can be seen by Python, type python from your shell. Then a
 import django
 print(django.get_version())
 3.1
-# You may have another version of Django installed
-if you want to dig deep into Django click here
+You may have another version of Django installed
