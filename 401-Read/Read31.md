@@ -16,7 +16,7 @@ CSS-in-JS refers to a pattern where CSS is composed using JavaScript instead of 
 Note that this functionality is not a part of React, but provided by third-party libraries. React does not have an opinion about how styles are defined; if in doubt, a good starting point is to define your styles in a separate *.css file as usual and refer to them using className.
 
 ## NextJs
-![image](../image/react1(2).png)
+![image](../image/nextjs.jpeg)
 
 To build a complete web application with React from scratch, there are many important details you need to consider:
 
